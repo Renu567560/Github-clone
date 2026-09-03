@@ -5,7 +5,7 @@ const dotenv = require("dotenv");
 var ObjectId = require("mongodb").ObjectId;
 
 dotenv.config();
-const uri = process.env.MONGO_URI || "mongodb+srv://girirenu17_db_user:r3G4r1CRDANaFWUz@githubclone.tez97xd.mongodb.net/githubclone?appName=Githubclone";
+const uri = process.env.MONGODB_URI;
 
 let client;
 
