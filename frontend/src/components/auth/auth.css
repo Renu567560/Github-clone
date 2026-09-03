@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #0d1117;
+}
+
+/* Logo */
+.login-logo-container {
+  margin-bottom: 16px;
+}
+
+.login-logo-container img {
+  width: 48px;
+  height: 48px;
+  filter: invert(1); /* Ensures logo is pure white */
+}
+
+/* Heading */
+.signup-heading {
+  font-size: 24px;
+  font-weight: 300;
+  color: #f0f6fc;
+  margin-bottom: 20px;
+}
+
+/* Form Container Box */
+.login-box {
+  width: 100%;
+  max-width: 320px;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+  color: #f0f6fc;
+}
+
+.input-group input {
+  width: 100%;
+  height: 36px;
+  padding: 5px 12px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #f1f6fd;
+  font-size: 14px;
+  outline: none;
+}
+
+.input-group input:focus {
+  border-color: #58a6ff;
+  box-shadow: 0 0 0 3px rgba(56, 139, 253, 0.3);
+}
+
+/* Outline Button Styling (as in your reference photo) */
+.login-btn {
+  width: 100%;
+  height: 36px;
+  background-color: transparent;
+  color: #f0f6fc;
+  border: 1px solid #8b949e;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  background-color: #30363d;
+  border-color: #8b949e;
+}
+
+/* Bottom Login Box */
+.account-box {
+  width: 100%;
+  max-width: 320px;
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  text-align: center;
+  background-color: #161b22;
+  font-size: 14px;
+}
+
+.account-box p {
+  color: #8b949e;
+}
+
+.account-box a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+.account-box a:hover {
+  text-decoration: underline;
+}

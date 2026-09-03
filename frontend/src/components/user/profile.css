@@ -1,0 +1,110 @@
+.profile-page {
+    background-color: #0d1117;
+    min-height: 100vh;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Sub-nav ko center align karne ke liye */
+.sub-nav-container {
+    display: flex;
+    justify-content: center;
+    background-color: #161b22;
+    border-bottom: 1px solid #30363d;
+    width: 100%;
+}
+
+.sub-nav-wrapper {
+    width: 100%;
+    max-width: 900px; /* Sir ke layout jaisa width limit */
+    padding: 0 20px;
+}
+
+/* Text aur icons ko white karne ke liye */
+.sub-nav-wrapper a, 
+.sub-nav-wrapper span {
+    color: #ffffff !important;
+}
+
+.sub-nav-wrapper svg {
+    fill: #ffffff !important;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.profile-avatar-container {
+    margin-bottom: 16px;
+}
+
+.profile-avatar-circle {
+    width: 120px;
+    height: 120px;
+    background-color: #7b8490;
+    border-radius: 50%;
+}
+
+.profile-username {
+    font-size: 20px;
+    font-weight: 600;
+    color: #c9d1d9;
+    margin: 0 0 16px 0;
+}
+
+.follow-btn {
+    background-color: #21262d;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+    padding: 6px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    width: 250px;
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.follow-btn:hover {
+    background-color: #30363d;
+    border-color: #8b949e;
+}
+
+.profile-stats {
+    display: flex;
+    gap: 8px;
+    color: #8b949e;
+    font-size: 14px;
+}
+
+.profile-stats strong {
+    color: #c9d1d9;
+}
+
+/* UnderlineNav ko center me push karne ke liye */
+.sub-nav-container nav {
+    display: flex !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    max-width: 1012px !important;
+    margin: 0 auto !important;
+    padding-left: 16px !important;
+}
+
+.profile-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 1012px;
+    margin: 0 auto;
+
+}
