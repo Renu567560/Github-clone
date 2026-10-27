@@ -16,17 +16,14 @@ const Login = () => {
     e.preventDefault();
     try {
       setLoading(true);
-     const res = await axios.post("http://localhost:3000/login", {
-        email,
-        password,
-      });
+      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/login`, { email, password });
       if (res.data) {
-  localStorage.setItem("token", res.data.token);
-  localStorage.setItem("userId", res.data.userId || res.data._id || "logged_in");
+        localStorage.setItem("token", res.data.token);
+        localStorage.setItem("userId", res.data.userId || res.data._id || "logged_in");
 
-  setCurrentUser(res.data.userId || res.data._id);
-  navigate("/");
-}
+        setCurrentUser(res.data.userId || res.data._id);
+        navigate("/");
+      }
       alert("Login successful!");
     } catch (err) {
       console.error(err);
@@ -72,7 +69,7 @@ const Login = () => {
           </div>
 
           <button type="submit" className="login-btn"
-           disabled={loading}>
+            disabled={loading}>
             {loading ? "Signing in..." : "Login"}
           </button>
         </form>
